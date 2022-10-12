@@ -1,0 +1,33 @@
+.products{
+  display: grid;
+  grid-template-columns: auto auto;/*Dos columnas para mostrar en mobile*/
+  grid-gap:10px ;
+  margin-top:10px ;
+  padding: 10px 10px 10px 10px;
+  max-width:800px;
+}
+.d-flex{
+  margin-left: 10px;
+  width: 300px;
+}
+.title_products{
+  color:black;
+  font-weight: 300;
+}
+h1{
+  color: beige;
+}
+@media (min-width: 700px){
+  .products{
+    grid-template-columns: auto auto auto;/*TRes columnas para mostrar en ipads*/
+    max-width:1000px;
+  }
+}
+
+@media (min-width: 1024px){
+  .products{
+    grid-template-columns: auto auto auto auto; /*Cuatro columnas para mostrar en PC*/
+    max-width:1400px;
+  }
+}
+
